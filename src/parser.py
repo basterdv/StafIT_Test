@@ -1,5 +1,6 @@
 import csv
 
+
 def parse_csv_files(file_paths):
     data = []
     for file_path in file_paths:

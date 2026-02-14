@@ -14,8 +14,8 @@ class AverageReport():
         # расчет средних значений
         average_gdp = [
             {
-                "country": country
-                , "gdp": sum(gdps) / len(gdps)
+                "country": country,
+                "gdp": sum(gdps) / len(gdps)
             }
             for country, gdps in country_gdp.items()
         ]
@@ -25,7 +25,7 @@ class AverageReport():
 
         # превращаем числа с 0.00 и добавляем нумерацию строк
         final_data = []
-        for i,item in enumerate(average_gdp,1):
+        for i, item in enumerate(average_gdp, 1):
             final_data.append({
                 "№": i,
                 "country": item["country"],
