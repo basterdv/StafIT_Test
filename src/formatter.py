@@ -1,4 +1,13 @@
 from tabulate import tabulate
 
 def format_report(data):
-    return tabulate(data, headers='keys', tablefmt='pretty')
+    if not data:
+        return print("Нет данных для формирования таблицы.")
+
+    return tabulate(
+        data,
+        headers='keys',
+        tablefmt='pretty',
+        numalign="right",
+        stralign="left",
+    )
