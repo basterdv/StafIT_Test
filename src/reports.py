@@ -1,5 +1,5 @@
 from collections import defaultdict
-from formatter import format_report
+from src.formatter import format_report
 
 
 class BaseReport:
